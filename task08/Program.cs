@@ -12,6 +12,6 @@ if (a < 2)
 else
 {
     for (int count = 2; count <= a; count++)
-    if (count % 2 == 0)
-       Console.WriteLine($"{count} ");
+        if (count % 2 == 0)
+            Console.WriteLine($"{count} ");
 }
