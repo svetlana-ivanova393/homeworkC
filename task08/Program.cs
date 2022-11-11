@@ -3,31 +3,15 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
+
 Console.WriteLine("Введите число: ");
 int a = Convert.ToInt32(Console.ReadLine());
 
 if (a < 2)
-Console.WriteLine("Недопустимое число");
+    Console.WriteLine("Недопустимое число");
 else
 {
-    int count = 2;
-    // count % 2 == 0;
-    while (count <= a)
-    {
-        if (count % 2 == 0)
-        {
-          Console.Write($"{count} ");
-        count++;  
-        }
-    }
+    for (int count = 2; count <= a; count++)
+    if (count % 2 == 0)
+       Console.WriteLine($"{count} ");
 }
-
-// {
-//     int count = a;
-//     while (count <= a)
-//     {
-//     // count % 2 == 0;
-//         Console.Write($"{count} "); 
-//         count++;
-//     }
-// }
